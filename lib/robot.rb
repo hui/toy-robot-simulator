@@ -1,0 +1,3 @@
+class Robot
+  #code
+end
