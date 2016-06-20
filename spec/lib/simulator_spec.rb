@@ -1,4 +1,4 @@
-require_relative 'spec_helper'
+require_relative '../spec_helper'
 
 describe Simulator do
   it 'should have a "run" method accept commands in text format' do
