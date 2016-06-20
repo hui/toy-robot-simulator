@@ -1,7 +1,12 @@
+require_relative 'robot'
+require_relative 'table'
+
 class Simulator
+  # Parse the commands in text format and report to the standard output.
   def self.run(commands)
     robot = Robot.new(Table.new)
 
+    # Parse commands line by line, ignore unrecognized commands.
     commands.split("\n").each do |command|
       case command
       when /^PLACE/
