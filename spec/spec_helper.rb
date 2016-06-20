@@ -1,5 +1,8 @@
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do
+  command_name 'MiniTest'
+  add_filter '/spec/'
+end
 
 require 'minitest/autorun'
 require_relative '../lib/simulator'
